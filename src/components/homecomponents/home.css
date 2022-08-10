@@ -1,0 +1,286 @@
+
+
+/* herosection */
+.hero{
+    
+    padding: 7%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.text_section{
+    text-align: start;
+}
+.image_section{
+    margin-left: auto;
+    
+}
+.pic{
+    width:80% ;
+    height: 80%;
+}
+.image{
+    width: 100%;
+    height: 100%;
+object-fit: contain;
+}
+.companytag{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    
+}
+@media screen and (max-width:600px) {
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+}
+/* 8 card portion */
+.cardportion{
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+    padding: 7%;
+    
+    
+}
+@media screen and (max-width:600px) {
+    .cardportion{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+}
+/*  service portion */
+.service_portion{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 7%;
+    
+}
+
+.image_section2{
+    margin-right: auto;
+
+}
+@media screen and (max-width:600px) {
+    .service_portion{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+}
+/* largecard_portion */
+.companytagcard{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    
+}
+@media screen and (max-width:600px) {
+    .companytagcard{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+}
+/* textsandcompanytags */
+.textandcompanytag{
+    padding: 7%;
+}
+
+
+/*  solution card*/
+
+.solutioncard{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+@media screen and (max-width:600px) {
+    .solutioncard{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+}
+/* bigcard2 */
+@media screen and (max-width:600px){
+    .bigcard{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+/* footer */
+.footer{
+    background-color:#252e3c;
+    padding: 7%;
+    
+    
+}
+.iteams{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr;
+    text-align: start;
+}
+.iteams6{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.ul{
+    list-style: none ;
+    font-size: 20px;
+    gap: 10px;
+    color: grey;
+    font-weight: 600;
+}
+.l{
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
+}
+.l1{
+    margin-bottom: 2px;
+}
+.icon{
+display: flex;
+justify-content: center;
+gap: 30px;
+color: white;
+margin-top: 14px;
+}
+@media screen and (max-width:600px) {
+    .iteams{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .iteams6{
+        display: grid;
+        justify-content: center;
+    }
+    
+}
+
+/* components css */
+
+
+/* titlecomp */
+.heading{
+    font-size: 4.0rem;;
+    font-weight: 500;
+}
+.paragraph{
+    
+        font-size: 25px;
+        color: #747990;
+}
+.head{
+    color:#6302d0;
+    font-size: 30px;
+    font-weight: 300;
+}
+/* card css */
+
+.card {
+    padding: 30px;
+    background-color: white;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  .card_description{
+    color: grey;
+    font-size: 18px;
+}
+.card_heading{
+    color: black;
+    font-size: 20px;
+}
+/*  */
+  .cardsolution {
+    
+    background-color: white;
+    max-width: 300px;
+    text-align: start;
+  }
+  .cardicon{
+      width: 25%;
+      height: 25%;
+
+  }
+  .producticon{
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+
+  }
+  /*  */
+  .bigcard {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 30px;
+    background-color:#6e0bde;
+    max-width: 80%;
+    margin: auto;
+    text-align: start;
+  }
+  .link{
+      color: white;
+    display: flex;
+    font-size: 22px;
+    margin-top: 10px;
+    column-gap: 35px;
+
+}
+.headingcard{
+    color: white;
+    font-size: 3.5rem;;
+    font-weight: 500;
+}
+.paragraphcard{
+    
+        font-size: 25px;
+        color:white;
+}
+.headcard{
+    color:white;
+    font-size: 30px;
+    font-weight: 300;
+}
+.imagecard{
+    margin-left: auto;
+}
+.button_portion{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+/* svg */
+.bp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+    background: blue;
+    transition: all .3s;
+
+    
+}
+.hr{
+    border: solid black;
+}
+.bt{
+    font-size: 19px;
+    width: 30%;
+    background-color: white;
+
+}
