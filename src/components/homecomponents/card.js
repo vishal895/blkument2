@@ -47,10 +47,10 @@ export const Cardsolution = ({title,description,image}) => {
 }
 export const Bigcard2  = ({head,heading,buttonname,button2}) =>{
   return (
-    <div className="bigcard">
+    <div className="bigcard2">
       <div className="texrcard">
         <div className="headcard">{head}</div>
-        <div className="headingcard">{heading}</div>
+        <div className="headingcard2">{heading}</div>
         
       </div>
       <div className="button_portion">

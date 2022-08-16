@@ -2,7 +2,7 @@ import React from 'react'
 
  export const Svg = ({image}) => {
   return (
-    <img src={image} alt="Hero client logo" width="150" height="88" data-v-14b2204f=""/>
+    <img src={image} alt="Hero client logo" width="100" height="88" data-v-14b2204f=""/>
   )
 }
 export const Cardsvg1 = () => {

@@ -2,7 +2,7 @@ import React from 'react'
 import { Bigcard, Bigcard2, Cardoption, Cardsolution } from '../../components/homecomponents/card'
 import "../../components/homecomponents/home.css"
 import { Cardsvg1, Cardsvg2, Cardsvg3, Cardsvg4, Cardsvg5, Cardsvg6, Cardsvg7, Cardsvg8, Svg } from '../../components/homecomponents/svg'
-// import Navbar from '../../components/homecomponents/navbar'
+import Navbar from '../../components/homecomponents/navbar'
 import { BasicButtons, Title, Title2 } from '../../components/homecomponents/title'
 import "../../components/homecomponents/home.css"
 import Button from '@mui/material/Button';
@@ -11,15 +11,16 @@ import EmailIcon from '@mui/icons-material/Email';
 const Homepage = () => {
   return (
     <>
-    {/* <section>
-      <Navbar />
-    </section> */}
     <section>
-      <div className="container">
+      <Navbar />
+    </section> 
+    <section>
         <div className="hero">
           <div className="text_section">
             <Title tagline="AI-powered advertising tech to grow your business" paragraph="Algorithmically optimize bids, build campaigns, and automate your keyword workflows"/>
+            
             <BasicButtons buttonname="Free Trail" buttonname2="Demo"/>
+          
             </div>
           <div className="image_section">
             <div className="pic">
@@ -34,7 +35,6 @@ const Homepage = () => {
         <Svg image="https://vulk.cssninja.io/assets/brands/grubspot.svg"/>
         <Svg image="https://vulk.cssninja.io/assets/brands/infinite.svg"/>
         </div>
-      </div>
       </section>
       <section>
         <div className="cardportion">
@@ -50,9 +50,12 @@ const Homepage = () => {
       </section>
       <section>
         <div className="service_portion">
-        <div className="text_section">
+        <div className="text_sectionservice">
             <Title2 head="Managed Services" tagline="Market based DSP managed service" paragraph="Whether you're looking to maximize reach, grow incremental profits, or optimize towards custom metrics, our team of experts is here to ensure success is targeted to your KPIs."/>
-            
+              <div className="link_portion">
+                <h3 className="budgetlink">Budget efficiency</h3>
+                <h3 className="budgetlink">Focus on your work</h3>
+              </div>
             </div>
           <div className="image_section">
             <div className="pic">
@@ -69,7 +72,7 @@ const Homepage = () => {
             <img src="https://vulk.cssninja.io/assets/illustrations/features/feature-2.png" className="image"/>
             </div>
           </div>
-        <div className="text_section">
+        <div className="text_sectionservice">
             <Title2 head="Goal-based Campaign Creation" tagline="Build campaigns aligned to your goals in minutes" paragraph=" Start with your business goals at a product level and let us automatically create ad groups and campaigns targeted to the right audiences. Do all of this at scale in just a few minutes with four simple steps."/>
             
             </div>
@@ -79,7 +82,7 @@ const Homepage = () => {
       </section>
       <section>
         <div className="service_portion">
-        <div className="text_section">
+        <div className="text_sectionservice">
             <Title2 head="Automated Keyword Actions" tagline="We find the best keywords based on your parameters" paragraph="Automate and customize your keyword selection by setting thresholds on conversions, cost per conversion, and click rates, and free up valuable time you can use for other important business tasks."/>
             
             </div>
@@ -98,7 +101,7 @@ const Homepage = () => {
             <img src="https://vulk.cssninja.io/assets/illustrations/features/feature-4.png" className="image"/>
             </div>
           </div>
-        <div className="text_section">
+        <div className="text_sectionservice">
             <Title2 head="Custom Analytics" tagline="Understand your business metrics, your way" paragraph="Drill and slice into your advertising performance data by different metrics, brand names, campaigns, targeting types, and mor"/>
             
             </div>
@@ -113,7 +116,7 @@ const Homepage = () => {
           </section>
           <section>
           <div className="textandcompanytag">
-            <div className="head">WE DRIVE RESULTS FOR ENTREPRENEURS TO THE FORTUNE 500</div>
+            <div className="headtext">WE DRIVE RESULTS FOR ENTREPRENEURS TO THE FORTUNE 500</div>
           <div className="companytagcard">
         <Svg image="https://vulk.cssninja.io/assets/brands/asuna.svg"/>
         <Svg image="https://vulk.cssninja.io/assets/brands/vonmo.svg"/>
@@ -128,8 +131,8 @@ const Homepage = () => {
       </section>
       <section>
         <div className="card3">
-          <div className="head">Why you should try our Optimization solution</div>
-          <div className="heading">Three reasons you’ll love our solution</div>
+          <div className="headtext">Why you should try our Optimization solution</div>
+          <div className="headingtext">Three reasons you’ll love our solution</div>
           <div className="solutioncard">
             <Cardsolution image="https://vulk.cssninja.io/assets/icons/colored/chat.svg" title="Reach more customers" description="Be where your customers are. Target buyers by search behavior, discover new converting keywords, and automatically set bids based on your product goals."/>
             <Cardsolution image="https://vulk.cssninja.io/assets/icons/colored/clock.svg"title="Save hours of time a week" description="Optimize your advertising workflow with automated campaign creation, keyword refinement, and algorithmic bidding. You set the controls, and our AI-technology does the heavy lifting."/>
@@ -138,12 +141,10 @@ const Homepage = () => {
         </div>
       </section>
       <section>
+         <div className="footer">
         <div className="largecard_portion2">
           <Bigcard2 head="30-day free trial" heading="Maximize your marketplace potential" buttonname="Get Started" button2="Let's talk"/>
         </div>
-      </section>
-      <section>
-        <div className="footer">
           <div className="iteams">
         <div className="iteams1">
         <ul className="ul">
@@ -187,8 +188,17 @@ const Homepage = () => {
     </div>
     <div className="iteams5">
         <ul className="ul">
-        <li><Button variant="contained" startIcon={<EmailIcon />}>Delete</Button></li>
-            <li><Button variant="contained">Contained</Button></li>
+                <li>
+                  <Button startIcon={<EmailIcon />} className="subscribe_btn" size="large">
+                    Subscribe
+                  </Button>
+                </li>
+                <br/>
+                <li>
+                  <Button variant="contained" className="subscribe_btn" size="large">
+                    Subscribe
+                  </Button>
+                </li>
             
             <li className="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-instagram" viewBox="0 0 16 16">
@@ -212,9 +222,6 @@ const Homepage = () => {
         <h3>Privacy Policy · Terms & Conditions</h3>
     </div>
     </div>
-    
-        
-                
       </section>
       </>
   )
